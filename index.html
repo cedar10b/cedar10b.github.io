@@ -57,7 +57,18 @@ p.title {position: relative; top: 20px; left: 60px;}
 
 <p style="font-family: calibri; font-size: 16pt; font-weight:bold;align: justify;">Side Projects</p>
 
-<p style="font-family:calibri; font-size: 14pt;align: justify;">Last summer I participated at the <span style="font-weight:bold">Kaggle Caterpillar Tube Pricing competition</span>. The goal of this project is to develop a machine learning model and predict the price of industrial tube assemblies that Caterpillar is using in its construction and mining equipment. The competition provides detailed information about the physical characteristics of the tubes and their components, as well as annual usage data. Submissions are evaluated on the Root Mean Squared Logarithmic Error (RMSLE). My best submission achieved a score of about 0.2125 on the private leaderboard and was ranked in the top 3% among more than 1300 teams. A summary of my approach as well as my code are posted in my <a href="https://github.com/cedar10b/Caterpillar-Tube-Pricing">Github page.</a><br>
+<p style="font-family:calibri; font-size: 14pt;align: justify;">Last summer I participated at the 
+<span style="font-weight:bold">Kaggle Caterpillar Tube Pricing competition</span>. The goal of this 
+project is to develop a machine learning model and predict the price of industrial tube assemblies. 
+The dataset is comprised of 21 relational tables. I merged all the tables into one large dataframe 
+and I used imputation techniques to replace missing values. I also used advanced feature engineering 
+methods to create new features with high predictive value. Then, I implemented feature selection 
+methods based on feature correlations and feature importances (computed with a Random Forest 
+Regressor) to reduce the number of features from 300 to about 60. Finally, I computed a blend of 
+Gradient Boosting models using the XGBoost library and Bagging. My best submission achieved a 
+score of about 0.2125 on the private leaderboard and was ranked in the top 3% among more than 
+1300 teams. A more detailed summary of my approach as well as my code are posted in 
+my <a href="https://github.com/cedar10b/Caterpillar-Tube-Pricing">Github page.</a><br>
 
 <p style="font-family:calibri; font-size: 14pt;align: justify;">Recently, I also developed a <span style="font-weight:bold">customized recommendation system for traveling</span>. This application takes as input the user's preferences for airfare, weather, safety, dining and nightlife, and recommends travel destinations using Yelp, QPX, and Weather Underground APIs as well as city crime data. A more detailed description of the application as well as the Python code are posted in my <a href="https://github.com/cedar10b/travelapp">Github page.</a><br>
 <br>
